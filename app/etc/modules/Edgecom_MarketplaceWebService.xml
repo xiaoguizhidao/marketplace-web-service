@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Edgecom_MarketplaceWebService>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Edgecom_MarketplaceWebService>
+    </modules>
+</config>

@@ -1,4 +1,4 @@
-sellercentral
-=============
+Marketplace Web Service
+=======================
 
-Sync products and orders between Magento and Amazon
+This Magento module allows merchants to sync products and orders between Magento and Amazon.

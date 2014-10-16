@@ -1,0 +1,11 @@
+{
+    "name": "edgecom/marketplace-web-service",
+    "type": "magento-module",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Thai Phan",
+            "email": "thai@outlook.com"
+        }
+    ]
+}
