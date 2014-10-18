@@ -1,4 +1,4 @@
 Marketplace Web Service
 =======================
 
-This Magento module allows merchants to sync products and orders between Magento and Amazon.
+This delightful module for Magento allows merchants to sync their products to Amazon Marketplace Web Services (Seller Central).

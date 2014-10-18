@@ -2,7 +2,78 @@
 <config>
     <modules>
         <Edgecom_MarketplaceWebService>
-            <version>1.0.0</version>
+            <version>0.3.0</version>
         </Edgecom_MarketplaceWebService>
     </modules>
+    <global>
+        <models>
+            <edgecom_marketplacewebservice>
+                <class>Edgecom_MarketplaceWebService_Model</class>
+            </edgecom_marketplacewebservice>
+        </models>
+        <helpers>
+            <edgecom_marketplacewebservice>
+                <class>Edgecom_MarketplaceWebService_Helper</class>
+            </edgecom_marketplacewebservice>
+        </helpers>
+        <resources>
+            <edgecom_marketplacewebservice_setup>
+                <setup>
+                    <module>Edgecom_MarketplaceWebService</module>
+                    <class>Mage_Catalog_Model_Resource_Setup</class>
+                </setup>
+            </edgecom_marketplacewebservice_setup>
+        </resources>
+    </global>
+    <default>
+        <general>
+            <marketplace_web_service>
+                <fulfillment>MFN</fulfillment>
+            </marketplace_web_service>
+        </general>
+    </default>
+    <crontab>
+        <jobs>
+            <edgecom_marketplacewebservice_export_product>
+                <schedule>
+                    <cron_expr>0 0 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>edgecom_marketplacewebservice/observer::exportProduct</model>
+                </run>
+            </edgecom_marketplacewebservice_export_product>
+            <edgecom_marketplacewebservice_export_relationship>
+                <schedule>
+                    <cron_expr>0 2 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>edgecom_marketplacewebservice/observer::exportRelationship</model>
+                </run>
+            </edgecom_marketplacewebservice_export_relationship>
+            <edgecom_marketplacewebservice_export_inventory>
+                <schedule>
+                    <cron_expr>0 3 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>edgecom_marketplacewebservice/observer::exportInventory</model>
+                </run>
+            </edgecom_marketplacewebservice_export_inventory>
+            <edgecom_marketplacewebservice_export_price>
+                <schedule>
+                    <cron_expr>0 4 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>edgecom_marketplacewebservice/observer::exportPrice</model>
+                </run>
+            </edgecom_marketplacewebservice_export_price>
+            <edgecom_marketplacewebservice_export_image>
+                <schedule>
+                    <cron_expr>0 5 * * *</cron_expr>
+                </schedule>
+                <run>
+                    <model>edgecom_marketplacewebservice/observer::exportImage</model>
+                </run>
+            </edgecom_marketplacewebservice_export_image>
+        </jobs>
+    </crontab>
 </config>

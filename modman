@@ -1,2 +1,4 @@
 app/code/community/Edgecom/* app/code/community/Edgecom/
 app/etc/modules/*            app/etc/modules/
+lib/MarketplaceWebService    lib/MarketplaceWebService
+shell/*                      shell/

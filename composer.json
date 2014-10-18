@@ -1,6 +1,7 @@
 {
     "name": "edgecom/marketplace-web-service",
     "type": "magento-module",
+    "description": "A delightful extension for synchronising your products with Amazon Marketplace Web Services (Seller Central)",
     "license": "Apache-2.0",
     "authors": [
         {
